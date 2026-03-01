@@ -1,51 +1,12 @@
-import { Briefcase } from "lucide-react"
+"use client"
 
-const experiences = [
-  {
-    role: "Engenheiro de Software",
-    company: "Interest Engenharia",
-    period: "Ago 2025 - Fev 2026",
-    location: "Recife, PE",
-    highlights: [
-      "Redesenho de plataforma de análise de lucratividade com ganho de 3x na velocidade de tomada de decisão.",
-      "Desenvolvimento e manutenção de APIs REST em Python (Flask) com foco em código testável e performance.",
-      "Liderança técnica: consultoria estratégica, direcionamento do time de TI e code reviews.",
-      "Conteinerização com Docker para agilizar onboarding e reduzir bugs de ambiente.",
-      "Implementação de componentes Angular responsivos e modulares.",
-      "Testes automatizados com Cypress (frontend) e Pytest (backend).",
-    ],
-    stack: ["Python", "Flask", "Angular", "PostgreSQL", "Docker", "Sentry", "Pytest", "Cypress"],
-  },
-  {
-    role: "Engenheiro de Software (Projeto JuMP)",
-    company: "Vlab - UFPE",
-    period: "Set 2023 - Ago 2025",
-    location: "Recife, PE",
-    highlights: [
-      "Desenvolvimento em Python (Flask) e processamento assíncrono com RabbitMQ.",
-      "Mineração de dados em Big Data e engenharia de pipelines de ETL.",
-      "Liderança de refatoração em Angular com foco em modularização e UX.",
-      "Automação de CI/CD com GitHub Actions e conteinerização Docker.",
-      "Remodelagem da suíte de testes antiga em Pytest.",
-      "Entrega de sistemas resilientes e aumento da produtividade do time de pesquisa.",
-    ],
-    stack: ["Python", "FastAPI", "Flask", "TypeScript", "RabbitMQ", "PostgreSQL", "MongoDB", "Redis", "Docker", "GitHub Actions"],
-  },
-  {
-    role: "Estagiário em Engenharia de Software",
-    company: "Vlab - UFPE (Escolas Pelo Mundo)",
-    period: "Mai 2023 - Set 2023",
-    location: "Recife, PE",
-    highlights: [
-      "Desenvolvimento de ferramenta open-source para prevenção de code smells.",
-      "Monitoria de Arquitetura de Computadores e Introdução à Computação.",
-      "Mentoria em C e integração hardware-software.",
-    ],
-    stack: ["Python", "C", "Git"],
-  },
-]
+import { Briefcase } from "lucide-react"
+import { useLanguage } from "@/lib/i18n/language-context"
 
 export function Experience() {
+  const { t } = useLanguage()
+  const experiences = t.experience.items
+
   return (
     <section id="experience" className="py-24 px-6">
       <div className="mx-auto max-w-4xl">

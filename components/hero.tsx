@@ -1,6 +1,11 @@
+"use client"
+
 import { ArrowDown } from "lucide-react"
+import { useLanguage } from "@/lib/i18n/language-context"
 
 export function Hero() {
+  const { t } = useLanguage()
+
   return (
     <section
       id="hero"
@@ -18,18 +23,17 @@ export function Hero() {
 
       <div className="relative z-10 max-w-3xl">
         <p className="mb-4 font-mono text-xs tracking-[0.3em] text-primary uppercase">
-          Software Engineer
+          {t.hero.subtitle}
         </p>
         <h1 className="text-4xl font-bold tracking-tight text-foreground sm:text-5xl lg:text-6xl text-balance leading-tight">
-          {"João Pedro Marinho"}
+          {t.hero.name}
         </h1>
         <p className="mx-auto mt-6 max-w-xl text-base leading-relaxed text-muted-foreground lg:text-lg">
-          Construindo{" "}
-          <span className="text-primary font-medium">sistemas escaláveis</span>{" "}
-          e explorando{" "}
-          <span className="text-primary font-medium">IA Generativa</span>.
-          Especialista em backends assíncronos em Python, com foco em performance,
-          segurança e liderança de SDLC.
+          {t.hero.descriptionStart}
+          <span className="text-primary font-medium">{t.hero.descriptionScalable}</span>
+          {t.hero.descriptionMiddle}
+          <span className="text-primary font-medium">{t.hero.descriptionAI}</span>
+          {t.hero.descriptionEnd}
         </p>
 
         <div className="mt-8 flex items-center justify-center gap-4">
@@ -37,13 +41,13 @@ export function Hero() {
             href="#experience"
             className="inline-flex items-center gap-2 rounded-lg bg-primary px-5 py-2.5 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/90"
           >
-            Ver Experiência
+            {t.hero.viewExperience}
           </a>
           <a
             href="#projects"
             className="inline-flex items-center gap-2 rounded-lg border border-border px-5 py-2.5 text-sm font-medium text-muted-foreground transition-colors hover:border-primary hover:text-primary"
           >
-            Case Studies
+            {t.hero.caseStudies}
           </a>
         </div>
 
@@ -61,7 +65,7 @@ export function Hero() {
       <a
         href="#experience"
         className="absolute bottom-10 text-muted-foreground hover:text-primary transition-colors animate-bounce"
-        aria-label="Rolar para baixo"
+        aria-label={t.hero.scrollDown}
       >
         <ArrowDown className="h-5 w-5" />
       </a>

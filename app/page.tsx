@@ -1,3 +1,5 @@
+"use client"
+
 import { Navbar } from "@/components/navbar"
 import { Hero } from "@/components/hero"
 import { Experience } from "@/components/experience"
@@ -5,10 +7,12 @@ import { CaseStudies } from "@/components/case-studies"
 import { PersonalProjects } from "@/components/personal-projects"
 import { Skills } from "@/components/skills"
 import { Footer } from "@/components/footer"
+import { LanguageSelectorModal } from "@/components/language-selector-modal"
 
 export default function Home() {
   return (
     <>
+      <LanguageSelectorModal />
       <Navbar />
       <main>
         <Hero />

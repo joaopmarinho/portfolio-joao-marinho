@@ -2,19 +2,22 @@
 
 import { useState, useEffect } from "react"
 import { cn } from "@/lib/utils"
-
-const navLinks = [
-  { label: "Sobre", href: "#hero" },
-  { label: "Experiência", href: "#experience" },
-  { label: "Projetos", href: "#projects" },
-  { label: "Lab", href: "#personal-projects" },
-  { label: "Skills", href: "#skills" },
-  { label: "Contato", href: "#contact" },
-]
+import { useLanguage } from "@/lib/i18n/language-context"
+import { LanguageToggle } from "@/components/language-toggle"
 
 export function Navbar() {
   const [scrolled, setScrolled] = useState(false)
   const [mobileOpen, setMobileOpen] = useState(false)
+  const { t } = useLanguage()
+
+  const navLinks = [
+    { label: t.nav.about, href: "#hero" },
+    { label: t.nav.experience, href: "#experience" },
+    { label: t.nav.projects, href: "#projects" },
+    { label: t.nav.lab, href: "#personal-projects" },
+    { label: t.nav.skills, href: "#skills" },
+    { label: t.nav.contact, href: "#contact" },
+  ]
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 20)
@@ -37,40 +40,47 @@ export function Navbar() {
         </a>
 
         {/* Desktop */}
-        <ul className="hidden md:flex items-center gap-8">
-          {navLinks.map((link) => (
-            <li key={link.href}>
-              <a
-                href={link.href}
-                className="font-mono text-xs text-muted-foreground hover:text-primary transition-colors tracking-wide uppercase"
-              >
-                {link.label}
-              </a>
-            </li>
-          ))}
-        </ul>
+        <div className="hidden md:flex items-center gap-8">
+          <ul className="flex items-center gap-8">
+            {navLinks.map((link) => (
+              <li key={link.href}>
+                <a
+                  href={link.href}
+                  className="font-mono text-xs text-muted-foreground hover:text-primary transition-colors tracking-wide uppercase"
+                >
+                  {link.label}
+                </a>
+              </li>
+            ))}
+          </ul>
+          <div className="h-4 w-px bg-border" />
+          <LanguageToggle />
+        </div>
 
         {/* Mobile toggle */}
-        <button
-          onClick={() => setMobileOpen(!mobileOpen)}
-          className="md:hidden text-muted-foreground hover:text-primary transition-colors"
-          aria-label={mobileOpen ? "Fechar menu" : "Abrir menu"}
-        >
-          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" strokeWidth="1.5">
-            {mobileOpen ? (
-              <>
-                <line x1="4" y1="4" x2="16" y2="16" />
-                <line x1="16" y1="4" x2="4" y2="16" />
-              </>
-            ) : (
-              <>
-                <line x1="3" y1="6" x2="17" y2="6" />
-                <line x1="3" y1="10" x2="17" y2="10" />
-                <line x1="3" y1="14" x2="17" y2="14" />
-              </>
-            )}
-          </svg>
-        </button>
+        <div className="flex md:hidden items-center gap-3">
+          <LanguageToggle />
+          <button
+            onClick={() => setMobileOpen(!mobileOpen)}
+            className="text-muted-foreground hover:text-primary transition-colors"
+            aria-label={mobileOpen ? t.nav.closeMenu : t.nav.openMenu}
+          >
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" strokeWidth="1.5">
+              {mobileOpen ? (
+                <>
+                  <line x1="4" y1="4" x2="16" y2="16" />
+                  <line x1="16" y1="4" x2="4" y2="16" />
+                </>
+              ) : (
+                <>
+                  <line x1="3" y1="6" x2="17" y2="6" />
+                  <line x1="3" y1="10" x2="17" y2="10" />
+                  <line x1="3" y1="14" x2="17" y2="14" />
+                </>
+              )}
+            </svg>
+          </button>
+        </div>
       </nav>
 
       {/* Mobile menu */}
