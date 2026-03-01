@@ -7,12 +7,13 @@ const experiences = [
   period: "Aug 2025 - Feb 2026",
   location: "Recife, PE, Brazil",
     highlights: [
-  "Redesigned a profitability analysis platform achieving a 3x improvement in decision-making speed.",
-  "Developed and maintained REST APIs in Python (Flask) with a focus on testability and performance.",
-  "Technical leadership: strategic consulting, guiding the IT team and performing code reviews.",
-  "Containerized applications with Docker to speed onboarding and reduce environment bugs.",
-  "Implemented responsive, modular Angular components.",
-  "Automated testing with Cypress (frontend) and Pytest (backend).",
+      "Redesigned a profitability analysis platform achieving a 3x improvement in decision-making speed.",
+      "Developed and maintained REST APIs in Python (Flask) with a focus on testability and performance.",
+      "Technical leadership: strategic consulting, guiding the IT team and performing code reviews.",
+      "Containerized applications with Docker to speed onboarding and reduce environment bugs.",
+      "Implemented responsive, modular React components.",
+      "Automated testing with Cypress (frontend) and Pytest (backend).",
+      "Implemented observability by using Sentry"
     ],
     stack: ["Python", "Flask", "Angular", "PostgreSQL", "Docker", "Sentry", "Pytest", "Cypress"],
   },
@@ -22,14 +23,14 @@ const experiences = [
   period: "Sep 2023 - Aug 2025",
   location: "Recife, PE, Brazil",
     highlights: [
-  "Developed in Python (Flask) and implemented asynchronous processing with RabbitMQ.",
+  "Developed in Python (Flask) and implemented asynchronous REST APIs.",
   "Data mining in Big Data and engineering of ETL pipelines.",
   "Led Angular refactorings focused on modularization and improved UX.",
   "Automated CI/CD with GitHub Actions and containerization with Docker.",
-  "Rebuilt legacy test suite using Pytest.",
+  "Rebuilt legacy test suite using Pytest/Jest.",
   "Delivered resilient systems and increased research team productivity.",
     ],
-    stack: ["Python", "FastAPI", "Flask", "TypeScript", "RabbitMQ", "PostgreSQL", "MongoDB", "Redis", "Docker", "GitHub Actions"],
+    stack: ["Python", "FastAPI", "Flask", "TypeScript", "PostgreSQL", "MongoDB", "Redis", "Docker", "GitHub Actions"],
   },
   {
   role: "Software Engineering Intern",
@@ -37,11 +38,12 @@ const experiences = [
   period: "May 2023 - Sep 2023",
   location: "Recife, PE, Brazil",
     highlights: [
-  "Developed an open-source tool for preventing code smells.",
-  "Assisted Computer Architecture and Introduction to Computing classes.",
-  "Mentored students in C and hardware-software integration.",
+    "Built and tested frontend interfaces using Angular and Cypress",
+    "Built REST APIs using Python (Flask)",
+    "Assisted in data ingestion and processing pipelines",
+    "Dockerized application environments"
     ],
-    stack: ["Python", "C", "Git"],
+    stack: ["Python", "Angular", "Docker"],
   },
 ]
 
@@ -52,7 +54,7 @@ export function Experience() {
         <div className="mb-16 flex items-center gap-3">
           <Briefcase className="h-5 w-5 text-primary" />
           <h2 className="font-mono text-xs tracking-[0.3em] text-primary uppercase">
-            Experiência Profissional
+            Professional Experience
           </h2>
         </div>
 

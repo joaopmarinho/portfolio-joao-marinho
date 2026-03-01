@@ -31,7 +31,7 @@ const skillCategories = [
   },
   {
     icon: Brain,
-    title: "IA & Dados",
+    title: "Data & AI",
     skills: [
       "IA Generativa",
       "ETL Pipelines",

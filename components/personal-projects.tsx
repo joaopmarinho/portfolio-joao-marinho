@@ -102,7 +102,7 @@ function ProjectCard({ project }: { project: PersonalProject }) {
           )}
           {!project.githubUrl && !project.liveUrl && (
             <span className="font-mono text-[11px] text-muted-foreground/50 italic">
-              Links em breve
+              Coming up soon
             </span>
           )}
         </div>
@@ -126,7 +126,7 @@ export function PersonalProjects() {
           <div className="flex items-center gap-3">
             <Rocket className="h-5 w-5 text-primary" />
             <h2 className="font-mono text-xs tracking-[0.3em] text-primary uppercase">
-              Projetos Pessoais
+              Personal Projects
             </h2>
           </div>
           {totalPages > 1 && (

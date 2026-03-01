@@ -9,30 +9,54 @@ const cases = [
       "Complete redesign of a profitability analysis platform for an engineering company. The new architecture delivered a 3x improvement in decision-making speed, reporting directly to C-level executives.",
     metrics: [
       { label: "Performance", value: "3x" },
-      { label: "Stack", value: "React + FastAPI" },
+      { label: "Stack", value: "Python" },
+      { label: "Solution", value: "Data automation script" },
+    ],
+    stack: ["Pandas", "Data Analysis", "NumPy"],
+  },
+  {
+    icon: TrendingUp,
+    tag: "System Building",
+    title: "Time Management & Invoicing Platform",
+    description:
+      "Built a scalable system to manage employee time, costs, and automate payroll and invoice issuance.",
+    metrics: [
+      { label: "Impact", value: "Automated payroll" },
+      { label: "Stack", value: "React + FastAPI + PostgreSQL" },
       { label: "Infrastructure", value: "Docker + Sentry" },
     ],
-    stack: ["React", "PostgreSQL", "FastAPI", "Docker", "Sentry", "GitHub Actions"],
+    stack: ["React", "PostgreSQL", "FastAPI", "Docker", "Sentry", "GitHub Actions", "OpenAPI", "Alembic"],
   },
   {
     icon: Database,
     tag: "Big Data",
     title: "Big Data & ETL System (JuMP)",
     description:
-      "Built ETL pipelines for data mining in a Big Data environment for the JuMP project (Vlab UFPE). Implemented asynchronous processing with RabbitMQ and Flask backends, ensuring resilience and continuous delivery for the research team.",
+      "Implemented ETL pipelines and API modules for large-scale data mining in the JuMP project (Vlab UFPE). Added new Angular features and performed targeted refactorings.",
     metrics: [
-      { label: "Type", value: "ETL Pipeline" },
-      { label: "Messaging", value: "RabbitMQ" },
-      { label: "Data", value: "Big Data" },
+      { label: "Primary", value: "ETL Pipelines" },
+      { label: "Frontend", value: "Angular" },
+      { label: "Tools", value: "Pandas / Polars / NumPy" },
     ],
-    stack: ["Python", "Flask", "RabbitMQ", "PostgreSQL", "MongoDB", "Redis", "Docker"],
+    stack: ["Python", "Flask", "RabbitMQ", "PostgreSQL", "MongoDB", "Redis", "Docker", "Pandas", "Polars"],
   },
   {
     icon: Shield,
     tag: "Open Source",
     title: "Code Smell Prevention Tool",
-    description:
-      "Open-source contribution to a tool for detecting and preventing code smells in software repositories. Part of research on Software Quality and Mining Software Repositories at UFPE.",
+    description: (
+      <>
+        Open-source contribution to a tool for detecting and preventing code smells in software repositories. Part of research on Software Quality and Mining Software Repositories at UFPE.{" "}
+        <a
+          href="https://repositorio.ufpe.br/handle/123456789/68205"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-primary underline"
+        >
+          View paper
+        </a>
+      </>
+    ),
     metrics: [
       { label: "Type", value: "Open Source" },
       { label: "Research", value: "UFPE" },
