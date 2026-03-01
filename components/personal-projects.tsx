@@ -16,21 +16,21 @@ const PROJECTS_PER_PAGE = 3
 
 const projects: PersonalProject[] = [
   {
-    title: "Em breve",
+    title: "Coming soon",
     description:
-      "Novos projetos pessoais serão adicionados aqui em breve. Fique atento para explorar experimentos com IA Generativa, automações e ferramentas open-source.",
+      "New personal projects will be added here soon. Stay tuned to explore experiments with Generative AI, automations and open-source tools.",
     technologies: ["Python", "React", "AI"],
   },
   {
-    title: "Em breve",
+    title: "Coming soon",
     description:
-      "Projeto pessoal em desenvolvimento. Este espaço será atualizado com detalhes, imagens e links assim que disponível.",
+      "Personal project in development. This space will be updated with details, images and links once available.",
     technologies: ["FastAPI", "Docker", "PostgreSQL"],
   },
   {
-    title: "Em breve",
+    title: "Coming soon",
     description:
-      "Mais um espaço reservado para projetos futuros. Acompanhe para novidades sobre ferramentas e contribuições open-source.",
+      "Another slot reserved for future projects. Follow for updates about tools and open-source contributions.",
     technologies: ["TypeScript", "Next.js", "Tailwind"],
   },
 ]

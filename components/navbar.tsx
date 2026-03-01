@@ -4,12 +4,12 @@ import { useState, useEffect } from "react"
 import { cn } from "@/lib/utils"
 
 const navLinks = [
-  { label: "Sobre", href: "#hero" },
-  { label: "Experiência", href: "#experience" },
-  { label: "Projetos", href: "#projects" },
+  { label: "About", href: "#hero" },
+  { label: "Experience", href: "#experience" },
+  { label: "Projects", href: "#projects" },
   { label: "Lab", href: "#personal-projects" },
   { label: "Skills", href: "#skills" },
-  { label: "Contato", href: "#contact" },
+  { label: "Contact", href: "#contact" },
 ]
 
 export function Navbar() {

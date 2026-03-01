@@ -24,12 +24,7 @@ export function Hero() {
           {"João Pedro Marinho"}
         </h1>
         <p className="mx-auto mt-6 max-w-xl text-base leading-relaxed text-muted-foreground lg:text-lg">
-          Construindo{" "}
-          <span className="text-primary font-medium">sistemas escaláveis</span>{" "}
-          e explorando{" "}
-          <span className="text-primary font-medium">IA Generativa</span>.
-          Especialista em backends assíncronos em Python, com foco em performance,
-          segurança e liderança de SDLC.
+          Building <span className="text-primary font-medium">scalable systems</span> and exploring <span className="text-primary font-medium">Generative AI</span>. Specialist in asynchronous Python backends, focused on performance, security and SDLC leadership.
         </p>
 
         <div className="mt-8 flex items-center justify-center gap-4">
@@ -37,7 +32,7 @@ export function Hero() {
             href="#experience"
             className="inline-flex items-center gap-2 rounded-lg bg-primary px-5 py-2.5 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/90"
           >
-            Ver Experiência
+            View Experience
           </a>
           <a
             href="#projects"
@@ -61,7 +56,7 @@ export function Hero() {
       <a
         href="#experience"
         className="absolute bottom-10 text-muted-foreground hover:text-primary transition-colors animate-bounce"
-        aria-label="Rolar para baixo"
+        aria-label="Scroll down"
       >
         <ArrowDown className="h-5 w-5" />
       </a>

@@ -4,39 +4,39 @@ const cases = [
   {
     icon: TrendingUp,
     tag: "Performance",
-    title: "Redesenho de Plataforma Financeira",
+    title: "Finance Platform Redesign",
     description:
-      "Redesenho completo de uma plataforma de análise de lucratividade para uma empresa de engenharia. A nova arquitetura resultou em um ganho de 3x na velocidade de tomada de decisão, com reporte direto a executivos C-level.",
+      "Complete redesign of a profitability analysis platform for an engineering company. The new architecture delivered a 3x improvement in decision-making speed, reporting directly to C-level executives.",
     metrics: [
       { label: "Performance", value: "3x" },
       { label: "Stack", value: "React + FastAPI" },
-      { label: "Infra", value: "Docker + Sentry" },
+      { label: "Infrastructure", value: "Docker + Sentry" },
     ],
     stack: ["React", "PostgreSQL", "FastAPI", "Docker", "Sentry", "GitHub Actions"],
   },
   {
     icon: Database,
     tag: "Big Data",
-    title: "Sistema de Big Data & ETL (JuMP)",
+    title: "Big Data & ETL System (JuMP)",
     description:
-      "Engenharia de pipelines de ETL para mineração de dados em Big Data no projeto JuMP (Vlab UFPE). Processamento assíncrono com RabbitMQ e backends em Flask, garantindo resiliência e entrega contínua para o time de pesquisa.",
+      "Built ETL pipelines for data mining in a Big Data environment for the JuMP project (Vlab UFPE). Implemented asynchronous processing with RabbitMQ and Flask backends, ensuring resilience and continuous delivery for the research team.",
     metrics: [
-      { label: "Tipo", value: "ETL Pipeline" },
-      { label: "Mensageria", value: "RabbitMQ" },
-      { label: "Dados", value: "Big Data" },
+      { label: "Type", value: "ETL Pipeline" },
+      { label: "Messaging", value: "RabbitMQ" },
+      { label: "Data", value: "Big Data" },
     ],
     stack: ["Python", "Flask", "RabbitMQ", "PostgreSQL", "MongoDB", "Redis", "Docker"],
   },
   {
     icon: Shield,
     tag: "Open Source",
-    title: "Ferramenta de Prevenção de Code Smells",
+    title: "Code Smell Prevention Tool",
     description:
-      "Contribuição open-source no desenvolvimento de uma ferramenta para detecção e prevenção de code smells em repositórios de software. Parte da pesquisa em Qualidade de Software e Mineração de Repositórios na UFPE.",
+      "Open-source contribution to a tool for detecting and preventing code smells in software repositories. Part of research on Software Quality and Mining Software Repositories at UFPE.",
     metrics: [
-      { label: "Tipo", value: "Open Source" },
-      { label: "Pesquisa", value: "UFPE" },
-      { label: "Foco", value: "Qualidade" },
+      { label: "Type", value: "Open Source" },
+      { label: "Research", value: "UFPE" },
+      { label: "Focus", value: "Quality" },
     ],
     stack: ["Python", "Git", "AST Analysis"],
   },
