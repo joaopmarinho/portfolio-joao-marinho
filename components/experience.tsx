@@ -8,14 +8,14 @@ const experiences = [
   location: "Recife, PE, Brazil",
     highlights: [
       "Redesigned a profitability analysis platform achieving a 3x improvement in decision-making speed.",
-      "Developed and maintained REST APIs in Python (Flask) with a focus on testability and performance.",
+      "Developed and maintained REST APIs in Python (FastAPI) with a focus on testability and performance.",
       "Technical leadership: strategic consulting, guiding the IT team and performing code reviews.",
       "Containerized applications with Docker to speed onboarding and reduce environment bugs.",
       "Implemented responsive, modular React components.",
       "Automated testing with Cypress (frontend) and Pytest (backend).",
       "Implemented observability by using Sentry"
     ],
-    stack: ["Python", "Flask", "Angular", "PostgreSQL", "Docker", "Sentry", "Pytest", "Cypress"],
+    stack: ["Python", "FastAPI", "Angular", "PostgreSQL", "Docker", "Sentry", "Pytest", "Cypress"],
   },
   {
   role: "Software Engineer (JuMP Project)",
